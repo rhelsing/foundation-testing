@@ -1439,4 +1439,24 @@ $include-html-global-classes: $include-html-classes;
 // $include-legacy-visibility-classes: true;
 // $include-accessibility-classes: true;
 
+
+
 @import 'foundation';
+
+
+//SAMPLE COLORS
+.one{
+	background-color: $primary-color;
+}
+.two{
+	background-color: $secondary-color;
+}
+.three{
+	background-color: $alert-color;
+}
+.four{
+	background-color: $success-color;
+}
+.five{
+	background-color: $warning-color;
+}

@@ -10,3 +10,29 @@ p
 = link_to 'Edit', edit_section_path(@section)
 '|
 = link_to 'Back', sections_path
+
+
+.row
+	.column.small-12.small-centered.one
+		.row data={equalizer:''}
+			.column.small-2.four data={equalizer_watch:''} admin
+			.column.small-10.three data={equalizer_watch:''}
+				a.button.right sign up
+		ul.small-block-grid-3.medium-block-grid-5.one
+			li.four #{fa_icon "bolt"}
+			li.five #{fa_icon "bolt"}
+			li #{fa_icon "bolt"}
+			li.four #{fa_icon "bolt"}
+			li.five #{fa_icon "bolt"}
+		/ .row
+		/ 	label Name
+		/ 		input type="text" name="name" aria-describedby="nameHelpText"
+		/ 	p#nameHelpText Enter your name.
+		.row
+			a.button data-reveal-id="myModal" Open Window
+			.reveal-modal#myModal data-reveal=""
+				h2 Awesome Modal
+				p.lead hey bud
+				p yoooooo
+				a.close-reveal-modal &#215
+				/ close
