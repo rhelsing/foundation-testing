@@ -1,4 +1,4 @@
 = simple_form_for @section, :html => {'data-abide' => ''} do |f|
-  = f.input :title, input_html: { required: '' }
-  = f.input :body, input_html: { required: '' }
+  = f.input :title, input_html: { required: '' }, hint: 'Cannot be blank.'
+  = f.input :body, input_html: { required: '' }, hint: 'Cannot be blank.'
   = f.button :submit

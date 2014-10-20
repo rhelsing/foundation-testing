@@ -8,11 +8,11 @@ SimpleForm.setup do |config|
     b.optional :min_max
     b.optional :readonly
     b.use :label_input
-    b.use :error, wrap_with: { tag: :small }
+    b.use :error, :wrap_with => { :tag => :small, :class => :error }#hack: non-default setting, handles non-abide forms
 
     # Uncomment the following line to enable hints. The line is commented out by default since Foundation
     # does't provide styles for hints. You will need to provide your own CSS styles for hints.
-    # b.use :hint,  wrap_with: { tag: :span, class: :hint }
+    b.use :hint,  wrap_with: { tag: :small, class: :error }#hack: using hint to pass error message to abide
   end
 
   # CSS class for buttons
