@@ -1,21 +1,32 @@
-nav.top-bar data-topbar="" role="navigation"
-	ul.title-area
-		li.name
-			h1
-				a href="#" My Site
-		li.toggle-topbar.menu-icon
-			a href="#"
-				span Menu
-	section.top-bar-section
-		ul.right
-			li.active
-				a href="#" Home
-			li
-				a href="#" Contact
-			li
-				a href="#" About
+div.sticky
+	nav.top-bar data-topbar="" role="navigation"
+		ul.title-area
+			li.name
+				h1
+					a href="#" My Site
+			li.toggle-topbar.menu-icon
+				a href="#"
+					span Menu
+		section.top-bar-section
+			ul.right
+				li.active
+					a href="#" Home
+				li
+					a href="#" Contact
+				li
+					a href="#" About
+	dl.sub-nav.four.no-margin
+	  dt Filter:
+	  dd.active
+	    a href="#"  All
+	  dd
+	    a href="#"  Active
+	  dd
+	    a href="#"  Pending
+	  dd
+	    a href="#"  Suspended
 .row.full-width data-equalizer=''
-	.columns.small-4.medium-3.large-2.two data-equalizer-watch=''
+	.columns.small-3.medium-3.large-2.two data-equalizer-watch=''
 		ul.side-nav
   			li
   				a href="#" #{fa_icon "bolt"} Link 1
@@ -25,10 +36,13 @@ nav.top-bar data-topbar="" role="navigation"
 				a href="#" #{fa_icon "bolt"} Link 3
 			li
 				a href="#" #{fa_icon "bolt"} Link 4
-	.columns.small-8.medium-9.large-10 data-equalizer-watch=''
+	.columns.small-9.medium-9.large-10 data-equalizer-watch=''
 		h1 Fields and button
 		h4.subheader Please fill out the form below
 		form
+		  .alert-box data-alert=""
+		  		span This is a standard alert.
+  				a.close href="#"  &times;
 		  .row
 		    .large-12.columns
 		      label.error
@@ -85,6 +99,15 @@ nav.top-bar data-topbar="" role="navigation"
 		  .row
 		  	.large-12.columns
 		  		submit.button Submit
+		  		a.button.round.small.secondary Round small secondary
+		  		a.button.radius.large Radius Large
+		  		ul.button-group
+				  li
+				    a.button.alert href="#"  Button 1
+				  li
+				    a.button.success href="#"  Button 2
+				  li
+				    a.button.secondary href="#"  Button 3
 		.row
 			.columns.small-12
 				h1 Table & Modal
