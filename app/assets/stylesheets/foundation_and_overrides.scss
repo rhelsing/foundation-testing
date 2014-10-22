@@ -1460,3 +1460,14 @@ $include-html-global-classes: $include-html-classes;
 .five{
 	background-color: $warning-color;
 }
+
+.middle {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+// hack: needed for admin
+.row.full-width {
+  width: 100%;
+  max-width: 100%;
+}

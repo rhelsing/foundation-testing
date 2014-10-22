@@ -1,0 +1,119 @@
+nav.top-bar data-topbar="" role="navigation"
+	ul.title-area
+		li.name
+			h1
+				a href="#" My Site
+		li.toggle-topbar.menu-icon
+			a href="#"
+				span Menu
+	section.top-bar-section
+		ul.right
+			li.active
+				a href="#" Home
+			li
+				a href="#" Contact
+			li
+				a href="#" About
+.row.full-width data-equalizer=''
+	.columns.small-4.medium-3.large-2.two data-equalizer-watch=''
+		ul.side-nav
+  			li
+  				a href="#" #{fa_icon "bolt"} Link 1
+  			li
+  				a href="#" #{fa_icon "bolt"} Link 2
+			li
+				a href="#" #{fa_icon "bolt"} Link 3
+			li
+				a href="#" #{fa_icon "bolt"} Link 4
+	.columns.small-8.medium-9.large-10 data-equalizer-watch=''
+		h1 Fields and button
+		h4.subheader Please fill out the form below
+		form
+		  .row
+		    .large-12.columns
+		      label.error
+		        | Input Label
+		        input.error placeholder="large-12.columns" type="text" /
+		      small.error Invalid entry
+		  .row
+		    .large-4.columns
+		      label
+		        | Input Label
+		        input placeholder="large-4.columns" type="text" /
+		    .large-4.columns
+		      label
+		        | Input Label
+		        input placeholder="large-4.columns" type="text" /
+		    .large-4.columns
+		      .row.collapse
+		        label Input Label
+		        .small-9.columns
+		          input placeholder="small-9.columns" type="text" /
+		        .small-3.columns
+		          span.postfix .com
+		  .row
+		    .large-12.columns
+		      label
+		        | Select Box
+		        select
+		          option value="husker"  Husker
+		          option value="starbuck"  Starbuck
+		          option value="hotdog"  Hot Dog
+		          option value="apollo"  Apollo
+		  .row
+		    .large-6.columns
+		      label Choose Your Favorite
+		      input#pokemonRed name="pokemon" type="radio" value="Red"
+		        label for="pokemonRed"  Red
+		        input#pokemonBlue name="pokemon" type="radio" value="Blue"
+		          label for="pokemonBlue"  Blue
+		    .large-6.columns
+		      label Check these out
+		      .row
+		      		.switch.round.small
+				  		input#cb type="checkbox"
+				    		label for="cb"
+			  .row
+		      		.switch.round.small
+				  		input#cb2 type="checkbox"
+				    		label for="cb2"
+		  .row
+		    .large-12.columns
+		      label
+		        | Textarea Label
+		        textarea placeholder="small-12.columns"
+		  .row
+		  	.large-12.columns
+		  		submit.button Submit
+		.row
+			.columns.small-12
+				h1 Table & Modal
+				h4.subheader Please click <a href="#" data-reveal-id="myModal">here</a> for modal
+				#myModal.reveal-modal data-reveal=""
+				  h2 Awesome. I have it.
+				  p.lead Your couch.  It is mine.
+				  p I'm a cool paragraph that lives inside of an even cooler modal. Wins!
+				  a.close-reveal-modal ×
+				table
+				  thead
+				    tr
+				      th width="200"  Table Header
+				      th Table Header
+				      th width="150"  Table Header
+				      th width="150"  Table Header
+				  tbody
+				    tr
+				      td Content Goes Here
+				      td This is longer content Donec id elit non mi porta gravida at eget metus.
+				      td Content Goes Here
+				      td Content Goes Here
+				    tr
+				      td Content Goes Here
+				      td This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.
+				      td Content Goes Here
+				      td Content Goes Here
+				    tr
+				      td Content Goes Here
+				      td This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.
+				      td Content Goes Here
+				      td Content Goes Here

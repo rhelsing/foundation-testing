@@ -4,5 +4,5 @@ Foundation Testing
 Todo
 ----
 
-* styles from dribbble w/ permutations
+* naming conventions
 * generator with customization
