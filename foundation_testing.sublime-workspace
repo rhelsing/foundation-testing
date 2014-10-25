@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"font",
+				"font-size: "
+			],
+			[
 				"aler",
 				"alert-color"
 			],
@@ -496,10 +500,6 @@
 				"price_icon"
 			],
 			[
-				"font",
-				"font-weight"
-			],
-			[
 				"price",
 				"price_block"
 			],
@@ -523,7 +523,7 @@
 			"file": "app/assets/stylesheets/foundation_and_overrides.scss",
 			"settings":
 			{
-				"buffer_size": 50472,
+				"buffer_size": 50704,
 				"line_ending": "Unix"
 			}
 		}
@@ -534,6 +534,18 @@
 		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"in",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"col",
+				"Color Picker"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
 			[
 				"ind",
 				"Indentation: Reindent Lines"
@@ -553,10 +565,6 @@
 			[
 				"upp",
 				"Convert Case: Upper Case"
-			],
-			[
-				"in",
-				"Indentation: Reindent Lines"
 			],
 			[
 				"sor",
@@ -600,10 +608,6 @@
 			],
 			[
 				"c",
-				"Color Picker"
-			],
-			[
-				"col",
 				"Color Picker"
 			],
 			[
@@ -659,10 +663,6 @@
 				"ReadmePlease"
 			],
 			[
-				"instal",
-				"Package Control: Install Package"
-			],
-			[
 				"Snippet: ",
 				"Snippet: <?php echo … ?>"
 			],
@@ -712,17 +712,25 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/ryanhelsing/Projects/rails/foundation_test"
+		"/Users/ryanhelsing/Projects/rails/foundation_test",
+		"/Users/ryanhelsing/Projects/rails/foundation_test/app",
+		"/Users/ryanhelsing/Projects/rails/foundation_test/app/assets",
+		"/Users/ryanhelsing/Projects/rails/foundation_test/app/controllers",
+		"/Users/ryanhelsing/Projects/rails/foundation_test/app/views",
+		"/Users/ryanhelsing/Projects/rails/foundation_test/app/views/styles",
+		"/Users/ryanhelsing/Projects/rails/foundation_test/config"
 	],
 	"file_history":
 	[
+		"/Users/ryanhelsing/Projects/rails/foundation_test/app/views/styles/home.html.slim",
+		"/Users/ryanhelsing/Projects/rails/foundation_test/app/views/styles/article.html.slim",
+		"/Users/ryanhelsing/Projects/rails/foundation_test/config/routes.rb",
+		"/Users/ryanhelsing/Projects/rails/foundation_test/app/controllers/styles_controller.rb",
 		"/Users/ryanhelsing/Projects/rails/foundation_test/app/views/styles/index.html.slim",
 		"/Users/ryanhelsing/Projects/rails/foundation_test/README.md",
 		"/Users/ryanhelsing/Projects/rails/foundation_test/app/views/sections/show.html.slim",
 		"/Users/ryanhelsing/Projects/rails/foundation_test/app/assets/stylesheets/foundation_and_overrides.scss",
-		"/Users/ryanhelsing/Projects/rails/foundation_test/config/routes.rb",
 		"/Users/ryanhelsing/Projects/rails/foundation_test/app/views/sections/_form.html.slim",
-		"/Users/ryanhelsing/Projects/rails/foundation_test/app/controllers/styles_controller.rb",
 		"/Users/ryanhelsing/Projects/rails/foundation_test/config/initializers/simple_form_foundation.rb",
 		"/Users/ryanhelsing/Projects/rails/foundation_test/config/initializers/simple_form.rb",
 		"/Users/ryanhelsing/Projects/rails/foundation_test/app/models/section.rb",
@@ -841,9 +849,7 @@
 		"/Users/ryanhelsing/Projects/rails/volo/app/views/providers/show.html.erb",
 		"/Users/ryanhelsing/Projects/rails/volo/app/views/providers/_form.html.erb",
 		"/Users/ryanhelsing/Projects/rails/volo/app/views/campaigns/_form.html.erb",
-		"/Users/ryanhelsing/Projects/bin/cheat.md",
-		"/Users/ryanhelsing/Projects/cheat.md",
-		"/Users/ryanhelsing/Projects/rails/volo/testCall.rb"
+		"/Users/ryanhelsing/Projects/bin/cheat.md"
 	],
 	"find":
 	{
@@ -947,15 +953,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 50472,
+						"buffer_size": 50704,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								50195,
-								50195
+								50703,
+								50703
 							]
 						],
 						"settings":
@@ -963,61 +969,61 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
 								"bh_single_quote_close",
 								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
 								"bh_default_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
 								"bh_regex",
 								"bh_regex_center",
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content"
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
 							],
 							"codeintel": true,
 							"codeintel_config":
@@ -1126,7 +1132,7 @@
 							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 24201.0,
+						"translation.y": 24559.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
