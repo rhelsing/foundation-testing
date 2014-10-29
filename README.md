@@ -1,8 +1,8 @@
 Foundation Testing
 ==================
 
-Goal
-----
+Goals
+-----
 
 #Gem
 ```ruby
@@ -21,7 +21,7 @@ section.row
 	article.columns.small-9
 		h1 Article title
 		h5.subheader Subheader
-		p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+		p Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 ```
 
 #Modify Overall, Modular Style With Commands
@@ -45,30 +45,26 @@ rails generate style:set colorscheme:Spacegray
 Todo
 ----
 
-* homepage template
-* about page template
 * overide styles for templates & add additional utility classes / patterns
 	* themes = new defaults for patterns
 	* patterns not defined by theme. oppisite.
 	* can alter behavior
-	* need:
-		* inverted
-		* transparent
-		* additional color definitions
-		* gradient
-		* blur
-		* fontfaces-primary etc
-		* capitalize
-		* outline - thickness
-		* selector styles
-* toggle style from image
-* icon bullets styles
-* split on vertical nav
-* headers w/ line
-* quotations
-* no pointer on label
-* generator
-* FLAT
-	* Integrate color schemes
-	* light color calculations
-	* transparent.inverse permutation.. on light bg
+* COMPONENTS
+	* icon bullets styles
+	* split on vertical nav
+	* headers w/ line
+	* quotations
+	* selector styles
+	* simple animations
+	* fontfaces-primary etc
+* FIXES
+	* no pointer on label
+	* toggle labels on either side?
+	* COLOR
+		* color corrections based on lightness
+* MODIFIERS
+	* modifiers:padding, border, space between buttons
+	* gradient
+	* blur
+* BUTTONS
+	* basic other styles
