@@ -78,9 +78,9 @@ $include-html-global-classes: $include-html-classes;
 // $include-html-grid-classes: $include-html-classes;
 // $include-xl-html-grid-classes: false;
 
-// $row-width: rem-calc(1000);
-// $total-columns: 12;
-// $column-gutter: rem-calc(30);
+$row-width: rem-calc(1000);
+$total-columns: 12;
+$column-gutter: rem-calc(3);
 
 // c. Global
 // - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -436,12 +436,12 @@ $font-smoothing: antialiased;
 // $button-font-family: $body-font-family;
 // $button-font-color: $white;
 // $button-font-color-alt: $oil;
-// $button-font-tny: rem-calc(11);
-// $button-font-sml: rem-calc(13);
-// $button-font-med: rem-calc(16);
-// $button-font-lrg: rem-calc(20);
-// $button-font-weight: $font-weight-normal;
-// $button-font-align: center;
+$button-font-tny: rem-calc(11);
+$button-font-sml: rem-calc(13);
+$button-font-med: rem-calc(15);
+$button-font-lrg: rem-calc(21);
+$button-font-weight: 100;
+$button-font-align: center;
 
 // We use these to control various hover effects.
 // $button-function-factor: -20%;
@@ -1476,14 +1476,6 @@ $font-smoothing: antialiased;
   top: 50%;
   transform: translateY(-50%);
 }
-// hack: needed for admin
-.row.full-width {
-  width: 100%;
-  max-width: 100%;
-}
-.no-margin{
-	margin: 0px;
-}
 .big-icon{
 	font-size: 12em;
 	color: $primary-color;
@@ -1507,23 +1499,43 @@ $font-smoothing: antialiased;
 	padding-top:100px;
 }
 
+//BEGIN ACTUAL MODS
 .button{
 	//permutations
 	font-weight: 200;
 	letter-spacing: 1px;
-	//text-transform: uppercase;
-	//default padding:
-	// padding-top: 1rem;
-	// padding-right: 2rem;
-	// padding-bottom: 1.0625rem;
-	// padding-left: 2rem;
-	// font-size: 1rem;
 
 	background-color: $primary-color;
 	border-color: $primary-color;
 	color: white;
-	transition: background-color 125ms ease-out;
+	transition: background-color 150ms ease-out;
+
+	padding-top: 0.9rem;
+	padding-right: 2.1rem;
+	padding-bottom: 0.96rem;
+	padding-left: 2.1rem;
+
+	margin-right: 0.5rem;//arbitrary
 }
+.button.tiny{
+	padding-top: 0.525rem;
+	padding-right: 1.35rem;
+	padding-bottom: 0.5875rem;
+	padding-left: 1.35rem;
+}
+.button.small{
+	padding-top: 0.775rem;
+	padding-right: 1.85rem;
+	padding-bottom: 0.8375rem;
+	padding-left: 1.85rem;
+}
+.button.large{
+	padding-top: 1.025rem;
+	padding-right: 2.55rem;
+	padding-bottom: 1.0875rem;
+	padding-left: 2.55rem;
+}
+
 .button.inverse{
 	background-color: white;
 	color: $primary-color;
@@ -1532,6 +1544,7 @@ $font-smoothing: antialiased;
 	background-color: lighten($primary-color, 10);
 	color: white;
 }
+
 .button.transparent{
 	background-color: transparent;
 	color: white;
@@ -1541,6 +1554,35 @@ $font-smoothing: antialiased;
 	background-color: white;
 	color: #17264c;
 }
+
+.button.wider-med{
+	padding-right: 2.5rem;
+	padding-left: 2.5rem;
+}
+
+.button.expand{
+	margin-right:0;
+}
+.fw-light{
+	font-weight: 200;
+}
+.fw-normal{
+	font-weight: 400;
+}
+.fw-medium{
+	font-weight: 500;
+}
+.fw-strong{
+	font-weight: 700;
+}
 .uppercase{
 	text-transform: uppercase;
+}
+// hack: needed for admin
+.row.full-width {
+  width: 100%;
+  max-width: 100%;
+}
+.no-margin{
+	margin: 0px;
 }

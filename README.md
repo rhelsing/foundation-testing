@@ -1,6 +1,47 @@
 Foundation Testing
 ==================
 
+Goal
+----
+
+#Gem
+```ruby
+gem 'style'
+```
+
+#Simple, Universal Markup
+```slim
+section.row
+	nav.columns.small-3
+		ul.side-nav
+		  li
+		    a href="#"  Link 1
+		  li
+		    a href="#"  Link 2
+	article.columns.small-9
+		h1 Article title
+		h5.subheader Subheader
+		p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+```
+
+#Modify Overall, Modular Style With Commands
+```console
+rails generate style:set theme:Flat
+```
+
+```console
+rails generate style:set typeface_primary:HelveticaNeau
+```
+
+```console
+rails generate style:set typeface_secondary:ComicSans
+```
+
+```console
+rails generate style:set colorscheme:Spacegray
+```
+
+
 Todo
 ----
 
@@ -29,11 +70,5 @@ Todo
 * generator
 * FLAT
 	* Integrate color schemes
-	* font-weight modifier
-	* fill 100% modifer already made?
-	* uppercase modifier
-	* Inverse modifier
-	* transparent modifier
-	* Outline modifier
-	* More padding - adjust accordingly on all modifiers
-	* Smaller font - adjust accordingly on all modifiers
+	* light color calculations
+	* transparent.inverse permutation.. on light bg
