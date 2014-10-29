@@ -5,4 +5,6 @@ class StylesController < ApplicationController
 	end
 	def article
 	end
+	def buttons
+	end
 end

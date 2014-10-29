@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root 'styles#index'
   get 'home' => 'styles#home'
   get 'article' => 'styles#article'
+  get 'buttons' => 'styles#buttons'
 
   resources :sections
 

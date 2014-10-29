@@ -27,3 +27,13 @@ Todo
 * quotations
 * no pointer on label
 * generator
+* FLAT
+	* Integrate color schemes
+	* font-weight modifier
+	* fill 100% modifer already made?
+	* uppercase modifier
+	* Inverse modifier
+	* transparent modifier
+	* Outline modifier
+	* More padding - adjust accordingly on all modifiers
+	* Smaller font - adjust accordingly on all modifiers
