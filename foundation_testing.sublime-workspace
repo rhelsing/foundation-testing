@@ -4,6 +4,54 @@
 		"selected_items":
 		[
 			[
+				"tran",
+				"transparent"
+			],
+			[
+				"dar",
+				"darken"
+			],
+			[
+				"mar",
+				"margin:0"
+			],
+			[
+				"fon",
+				"font-weight: "
+			],
+			[
+				"text",
+				"text-transform: "
+			],
+			[
+				"light",
+				"lighten"
+			],
+			[
+				"border-co",
+				"border-color:   (property)"
+			],
+			[
+				"background-c",
+				"background-color:   (property)"
+			],
+			[
+				"prim",
+				"primary-color"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"let",
+				"letter-spacing: "
+			],
+			[
 				"font",
 				"font-size: "
 			],
@@ -64,10 +112,6 @@
 				"progression"
 			],
 			[
-				"pad",
-				"padding-top: "
-			],
-			[
 				"scr",
 				"script"
 			],
@@ -104,10 +148,6 @@
 				"transparent"
 			],
 			[
-				"mar",
-				"margin-top: "
-			],
-			[
 				"le",
 				"letter-spacing: "
 			],
@@ -118,10 +158,6 @@
 			[
 				"ma",
 				"margin-top: "
-			],
-			[
-				"fon",
-				"font-size: "
 			],
 			[
 				"home",
@@ -240,10 +276,6 @@
 				"ryanhelsing@gmail"
 			],
 			[
-				"tran",
-				"transactionId"
-			],
-			[
 				"aco",
 				"account_number"
 			],
@@ -326,10 +358,6 @@
 			[
 				"st",
 				"state"
-			],
-			[
-				"text",
-				"text-align-last"
 			],
 			[
 				"not",
@@ -486,44 +514,16 @@
 			[
 				"C",
 				"CONTENT_TYPES"
-			],
-			[
-				"erro",
-				"error_messages_for  (function)"
-			],
-			[
-				"style",
-				"stylesheet_link_tag  (function)"
-			],
-			[
-				"pric",
-				"price_icon"
-			],
-			[
-				"price",
-				"price_block"
-			],
-			[
-				"bo",
-				"border-top"
-			],
-			[
-				"te",
-				"text-decoration"
-			],
-			[
-				"hea",
-				"header	Tag"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "app/assets/stylesheets/foundation_and_overrides.scss",
+			"file": "README.md",
 			"settings":
 			{
-				"buffer_size": 50704,
+				"buffer_size": 1282,
 				"line_ending": "Unix"
 			}
 		}
@@ -535,7 +535,7 @@
 		"selected_items":
 		[
 			[
-				"in",
+				"ind",
 				"Indentation: Reindent Lines"
 			],
 			[
@@ -543,12 +543,16 @@
 				"Color Picker"
 			],
 			[
-				"instal",
-				"Package Control: Install Package"
+				"co",
+				"Color Picker"
 			],
 			[
-				"ind",
+				"in",
 				"Indentation: Reindent Lines"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
 			],
 			[
 				"insta",
@@ -601,10 +605,6 @@
 			[
 				"inst",
 				"Package Control: Install Package"
-			],
-			[
-				"co",
-				"Color Picker"
 			],
 			[
 				"c",
@@ -691,7 +691,7 @@
 				"Bookmarks: Clear All"
 			]
 		],
-		"width": 521.0
+		"width": 602.0
 	},
 	"console":
 	{
@@ -722,14 +722,15 @@
 	],
 	"file_history":
 	[
+		"/Users/ryanhelsing/Projects/rails/foundation_test/app/views/styles/buttons.html.slim",
+		"/Users/ryanhelsing/Projects/rails/foundation_test/app/assets/stylesheets/foundation_and_overrides.scss",
+		"/Users/ryanhelsing/Projects/rails/foundation_test/README.md",
+		"/Users/ryanhelsing/Projects/rails/foundation_test/app/views/styles/index.html.slim",
+		"/Users/ryanhelsing/Projects/rails/foundation_test/app/controllers/styles_controller.rb",
+		"/Users/ryanhelsing/Projects/rails/foundation_test/config/routes.rb",
 		"/Users/ryanhelsing/Projects/rails/foundation_test/app/views/styles/home.html.slim",
 		"/Users/ryanhelsing/Projects/rails/foundation_test/app/views/styles/article.html.slim",
-		"/Users/ryanhelsing/Projects/rails/foundation_test/config/routes.rb",
-		"/Users/ryanhelsing/Projects/rails/foundation_test/app/controllers/styles_controller.rb",
-		"/Users/ryanhelsing/Projects/rails/foundation_test/app/views/styles/index.html.slim",
-		"/Users/ryanhelsing/Projects/rails/foundation_test/README.md",
 		"/Users/ryanhelsing/Projects/rails/foundation_test/app/views/sections/show.html.slim",
-		"/Users/ryanhelsing/Projects/rails/foundation_test/app/assets/stylesheets/foundation_and_overrides.scss",
 		"/Users/ryanhelsing/Projects/rails/foundation_test/app/views/sections/_form.html.slim",
 		"/Users/ryanhelsing/Projects/rails/foundation_test/config/initializers/simple_form_foundation.rb",
 		"/Users/ryanhelsing/Projects/rails/foundation_test/config/initializers/simple_form.rb",
@@ -848,12 +849,11 @@
 		"/Users/ryanhelsing/Projects/rails/volo/app/controllers/providers_controller.rb",
 		"/Users/ryanhelsing/Projects/rails/volo/app/views/providers/show.html.erb",
 		"/Users/ryanhelsing/Projects/rails/volo/app/views/providers/_form.html.erb",
-		"/Users/ryanhelsing/Projects/rails/volo/app/views/campaigns/_form.html.erb",
-		"/Users/ryanhelsing/Projects/bin/cheat.md"
+		"/Users/ryanhelsing/Projects/rails/volo/app/views/campaigns/_form.html.erb"
 	],
 	"find":
 	{
-		"height": 25.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -867,6 +867,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			".05",
+			"button",
 			"form",
 			"background",
 			"shadow",
@@ -949,19 +951,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "app/assets/stylesheets/foundation_and_overrides.scss",
+					"file": "README.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 50704,
+						"buffer_size": 1282,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								50703,
-								50703
+								743,
+								743
 							]
 						],
 						"settings":
@@ -979,21 +981,36 @@
 								"bh_angle_open",
 								"bh_angle_close",
 								"bh_angle_content",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_round_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
 								"bh_double_quote_close",
 								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
@@ -1004,26 +1021,11 @@
 								"bh_tag_open",
 								"bh_tag_close",
 								"bh_tag_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content"
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
 							],
 							"codeintel": true,
 							"codeintel_config":
@@ -1129,10 +1131,11 @@
 							},
 							"codeintel_tooltips": "popup",
 							"sublime_auto_complete": true,
-							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage"
+							"syntax": "Packages/Markdown/Markdown.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 24559.0,
+						"translation.y": 266.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,

@@ -45,10 +45,12 @@ rails generate style:set colorscheme:Spacegray
 Todo
 ----
 
-* overide styles for templates & add additional utility classes / patterns
-	* themes = new defaults for patterns
-	* patterns not defined by theme. oppisite.
-	* can alter behavior
+* PHILOSOPLY
+	* access any style by chaining
+		* a.button.primary.transparent.extra-padding.fw-medium.uppercase Custom Button
+	* can create themes with behaviours built in
+		* FLAT THEME:
+		* a.button DEFAULT BUTTON
 * COMPONENTS
 	* icon bullets styles
 	* split on vertical nav
