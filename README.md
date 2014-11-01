@@ -38,7 +38,7 @@ rails generate style:set typeface_secondary:ComicSans
 ```
 
 ```console
-rails generate style:set colorscheme:Spacegray
+rails generate style:set colorscheme:Flatland
 ```
 
 
@@ -58,7 +58,7 @@ Todo
 	* quotations
 	* selector styles
 	* simple animations
-	* fontfaces-primary etc
+	* refills++
 * FIXES
 	* no pointer on label
 	* toggle labels on either side?
@@ -69,4 +69,14 @@ Todo
 	* gradient
 	* blur
 * BUTTONS
-	* basic other styles
+	* shadow / text-shadow
+	* border
+	* outline
+	* 3d effect - intense vs subtle
+	* BUTTON GROUPS, ICONS, ANIMATION
+	* Primary override
+* FORMS / ERRORS
+* TYPOGRAPHY
+* TBD PROCESS:
+	* COLORS
+	* NAVIGATION / MOBILE SIDEBAR

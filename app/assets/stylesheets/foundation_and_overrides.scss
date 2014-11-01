@@ -1556,7 +1556,7 @@ $button-font-align: center;
 		color: set-text-color($temp-color);
 	}
 	.button.#{$color}:hover{
-		background-color: lighten($temp-color, 8);
+		background-color: lighten($temp-color, 8%);
 	//change hover color based on lightness
 	}
 	.button.#{$color}.inverse{
@@ -1564,7 +1564,7 @@ $button-font-align: center;
 		color: $temp-color;//unless it is very light
 	}
 	.button.#{$color}.inverse:hover{
-		background-color: lighten($temp-color, 40);//unless it is very light
+		background-color: lighten($temp-color, 40%);//unless it is very light
 	}
 	.button.#{$color}.transparent{
 		background-color: transparent;
@@ -1573,7 +1573,7 @@ $button-font-align: center;
 	}
 	.button.#{$color}.transparent:hover{
 		background-color: $temp-color;//unless it is very light
-		color: white;
+		color: set-text-color($temp-color);
 	}
 	.button.#{$color}.inverse.transparent{
 		background-color: transparent;
@@ -1584,17 +1584,24 @@ $button-font-align: center;
 		background-color: white;
 		color: $temp-color;
 	}
-}
-
-
-.button.transparent{
-	background-color: transparent;
-	color: white;
-	border: 1px solid white;
-}
-.button.transparent:hover{
-	background-color: white;
-	color: #17264c;
+	.button.#{$color}.gradient{
+		$base_color: $temp-color;
+		border-top: 1px solid adjust-hue(lighten($base_color, 12%), -3% );
+		background: -webkit-linear-gradient(adjust-hue(lighten($base_color, 5),-1%), $base_color); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(adjust-hue(lighten($base_color, 5),-1%), $base_color); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(adjust-hue(lighten($base_color, 5),-1%), $base_color); /* For Firefox 3.6 to 15 */
+		background: linear-gradient(adjust-hue(lighten($base_color, 5),-1%), $base_color); /* Standard syntax */
+	    box-shadow: 0px 0px 1px rgba(0,0,0,0.3);
+	}
+	.button.#{$color}.gradient:hover{
+		$base_color: lighten($temp-color, 8%);
+		border-top: 1px solid adjust-hue(lighten($base_color, 12%), -3% );
+		background: -webkit-linear-gradient(adjust-hue(lighten($base_color, 5),-1%), $base_color); /* For Safari 5.1 to 6.0 */
+		background: -o-linear-gradient(adjust-hue(lighten($base_color, 5),-1%), $base_color); /* For Opera 11.1 to 12.0 */
+		background: -moz-linear-gradient(adjust-hue(lighten($base_color, 5),-1%), $base_color); /* For Firefox 3.6 to 15 */
+		background: linear-gradient(adjust-hue(lighten($base_color, 5),-1%), $base_color); /* Standard syntax */
+	    box-shadow: 0px 0px 1px rgba(0,0,0,0.3);
+	}
 }
 
 .button.wider-med{
@@ -1628,3 +1635,8 @@ $button-font-align: center;
 .no-margin{
 	margin: 0px;
 }
+
+//PRO
+// .button.gradient{
+	//moved to generator
+// }
