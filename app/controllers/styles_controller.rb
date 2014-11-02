@@ -7,4 +7,7 @@ class StylesController < ApplicationController
 	end
 	def buttons
 	end
+	def forms
+		@user = Style.new()
+	end
 end

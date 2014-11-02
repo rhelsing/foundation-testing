@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get 'home' => 'styles#home'
   get 'article' => 'styles#article'
   get 'buttons' => 'styles#buttons'
+  get 'forms' => 'styles#forms'
 
   resources :sections
 

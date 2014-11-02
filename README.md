@@ -67,6 +67,7 @@ Todo
 	* Transparent has problem on group
 	* Split buttons check
 	* no border on group
+	* pro text place down
 * MODIFIERS
 	* modifiers:padding, border, space between buttons
 	* gradient
@@ -80,6 +81,12 @@ Todo
 * FORMS / ERRORS
 	* Generate simple page for testing w/ simple form?
 	* Determine modifiers and create css
+	* Label Strength and Uppercase
+	* Put pro into it's own class like flat for now
 * TYPOGRAPHY
+* COLORS
+	* typography colors
+	* form gray
+	* all arbitrary colors defined in one place
 * TBD PROCESS:
 	* NAVIGATION / MOBILE SIDEBAR
