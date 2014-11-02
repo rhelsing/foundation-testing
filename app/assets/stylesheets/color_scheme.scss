@@ -1,0 +1,14 @@
+//COLOR SCHEME
+
+//ADDITIONAL NOTATION: quaternary, quinary, senary, septenary, octonary, nonary, and denary
+$primary-color: #2980b9;//blue
+$secondary-color: #2c3e50;//dark blue
+$tertiary-color: #bdc3c7;//concrete
+$alert-color: #e74c3c;//red
+$success-color: #1abc9c;//green
+$warning-color: #f1c40f;//yellow/orange
+$info-color: #9b59b6;//purple
+
+//NEEDED FOR GENERATION OF CLASSES. ADD TO LIST IF YOU ADD COLORS.
+$colors: 			primary 		secondary 			tertiary 		alert 			success 		warning 		info;
+$color-definition: 	$primary-color 	$secondary-color 	$tertiary-color $alert-color 	$success-color 	$warning-color 	$info-color;

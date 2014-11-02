@@ -1,0 +1,36 @@
+//ADDITIONAL UTILITIES
+//Not Working: need vertical alignment
+.middle {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+//font weights
+.fontweight-light{
+	font-weight: 200;
+}
+.fontweight-normal{
+	font-weight: 400;
+}
+.fontweight-medium{
+	font-weight: 500;
+}
+.fontweight-strong{
+	font-weight: 700;
+}
+.uppercase{
+	text-transform: uppercase;
+}
+// hack: needed for admin
+.row.full-width {
+  width: 100%;
+  max-width: 100%;
+}
+.no-margin{
+	margin: 0px;
+}
+
+//* modifiers:padding, border, space between buttons
+//* gradient
+//* blur
+//* middle

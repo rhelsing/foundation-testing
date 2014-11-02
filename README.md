@@ -45,10 +45,9 @@ rails generate style:set colorscheme:Flatland
 Todo
 ----
 
-* Seperate into files
 * PHILOSOPLY
 	* access any style by chaining
-		* a.button.primary.transparent.extra-padding.fw-medium.uppercase Custom Button
+		* a.button.primary.transparent.extra-padding.fontweight-medium.uppercase Custom Button
 	* can create themes with behaviours built in
 		* FLAT THEME:
 		* a.button DEFAULT BUTTON
@@ -65,6 +64,9 @@ Todo
 	* toggle labels on either side?
 	* COLOR
 		* color corrections based on lightness
+	* Transparent has problem on group
+	* Split buttons check
+	* no border on group
 * MODIFIERS
 	* modifiers:padding, border, space between buttons
 	* gradient
@@ -75,10 +77,7 @@ Todo
 	* outline/well
 	* changes on subtle colors
 	* Animation
-	* Transparent has problem on group
-	* Split buttons
 * FORMS / ERRORS
 * TYPOGRAPHY
 * TBD PROCESS:
-	* COLORS
 	* NAVIGATION / MOBILE SIDEBAR
