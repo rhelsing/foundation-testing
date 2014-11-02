@@ -71,7 +71,6 @@ Todo
 	* blur
 * BUTTONS
 	* More 3d button
-	* text-shadow
 	* outline - later
 	* BUTTON GROUPS, ICONS, ANIMATION
 	* Primary override
