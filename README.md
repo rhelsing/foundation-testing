@@ -78,6 +78,8 @@ Todo
 	* changes on subtle colors
 	* Animation
 * FORMS / ERRORS
+	* Generate simple page for testing w/ simple form?
+	* Determine modifiers and create css
 * TYPOGRAPHY
 * TBD PROCESS:
 	* NAVIGATION / MOBILE SIDEBAR
