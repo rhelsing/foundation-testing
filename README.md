@@ -69,11 +69,14 @@ Todo
 	* modifiers:padding, border, space between buttons
 	* gradient
 	* blur
-* BUTTONS
-	* More 3d button
-	* outline - later
-	* BUTTON GROUPS, ICONS, ANIMATION
+* BUTTONS - LATER
 	* Primary override
+	* More intense gradient/pro
+	* outline/well
+	* changes on subtle colors
+	* Animation
+	* Transparent has problem on group
+	* Split buttons
 * FORMS / ERRORS
 * TYPOGRAPHY
 * TBD PROCESS:

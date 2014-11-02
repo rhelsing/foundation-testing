@@ -1473,7 +1473,7 @@ $button-font-align: center;
 	background-color: $warning-color;
 }
 //ADDITIONAL UTILITIES
-//Not Working
+//Not Working: need vertical alignment
 .middle {
   position: relative;
   top: 50%;
@@ -1503,139 +1503,11 @@ $button-font-align: center;
 }
 
 //BEGIN ACTUAL MODS
-.button{
-	//permutations
-	font-weight: 200;
-	letter-spacing: 1px;
+@import 'buttons';
 
-	background-color: $primary-color;
-	border-color: $primary-color;
-	color: white;
-	transition: background-color 150ms ease-out;
 
-	padding-top: 0.9rem;
-	padding-right: 2.1rem;
-	padding-bottom: 0.96rem;
-	padding-left: 2.1rem;
 
-	margin-right: 0.5rem;//arbitrary
-}
-.button.tiny{
-	padding-top: 0.525rem;
-	padding-right: 1.35rem;
-	padding-bottom: 0.5875rem;
-	padding-left: 1.35rem;
-}
-.button.small{
-	padding-top: 0.775rem;
-	padding-right: 1.85rem;
-	padding-bottom: 0.8375rem;
-	padding-left: 1.85rem;
-}
-.button.large{
-	padding-top: 1.025rem;
-	padding-right: 2.55rem;
-	padding-bottom: 1.0875rem;
-	padding-left: 2.55rem;
-}
-
-@function set-text-color($color) {
-  @if (lightness($color) > 60%) {
-    @return darken($color, 40); // Lighter backgorund, return dark color
-  } @else {
-    @return white; // Darker background, return light color
-  }
-}
-
-//NEED TO OVERWRITE .BUTTON DEFAULT OR CALL PRIMARY
-@each $color in $colors {
-	$i: index($colors, $color);
-	$temp-color: nth($color-definition, $i);
-	.button.#{$color}{
-		background-color: $temp-color;
-		color: set-text-color($temp-color);
-	}
-	.button.#{$color}:hover{
-		background-color: lighten($temp-color, 8%);
-	//change hover color based on lightness
-	}
-	.button.#{$color}.inverse{
-		background-color: white;
-		color: $temp-color;//unless it is very light
-	}
-	.button.#{$color}.inverse:hover{
-		background-color: lighten($temp-color, 40%);//unless it is very light
-	}
-	.button.#{$color}.transparent{
-		background-color: transparent;
-		color: $temp-color;
-		border: 1px solid $temp-color;
-	}
-	.button.#{$color}.transparent:hover{
-		background-color: $temp-color;//unless it is very light
-		color: set-text-color($temp-color);
-	}
-	.button.#{$color}.inverse.transparent{
-		background-color: transparent;
-		color: white;
-		border: 1px solid white;
-	}
-	.button.#{$color}.inverse.transparent:hover{
-		background-color: white;
-		color: $temp-color;
-	}
-	.button.#{$color}.gradient{
-		$base_color: $temp-color;
-		border-top: 1px solid adjust-hue(lighten($base_color, 12%), -3% );
-		background: -webkit-linear-gradient(adjust-hue(lighten($base_color, 5),-1%), $base_color); /* For Safari 5.1 to 6.0 */
-		background: -o-linear-gradient(adjust-hue(lighten($base_color, 5),-1%), $base_color); /* For Opera 11.1 to 12.0 */
-		background: -moz-linear-gradient(adjust-hue(lighten($base_color, 5),-1%), $base_color); /* For Firefox 3.6 to 15 */
-		background: linear-gradient(adjust-hue(lighten($base_color, 5),-1%), $base_color); /* Standard syntax */
-	    box-shadow: 0px 0px 1px rgba(0,0,0,0.3);
-	}
-	.button.#{$color}.gradient:hover{
-		$base_color: lighten($temp-color, 8%);
-		border-top: 1px solid adjust-hue(lighten($base_color, 12%), -3% );
-		background: -webkit-linear-gradient(adjust-hue(lighten($base_color, 5),-1%), $base_color); /* For Safari 5.1 to 6.0 */
-		background: -o-linear-gradient(adjust-hue(lighten($base_color, 5),-1%), $base_color); /* For Opera 11.1 to 12.0 */
-		background: -moz-linear-gradient(adjust-hue(lighten($base_color, 5),-1%), $base_color); /* For Firefox 3.6 to 15 */
-		background: linear-gradient(adjust-hue(lighten($base_color, 5),-1%), $base_color); /* Standard syntax */
-	    box-shadow: 0px 0px 1px rgba(0,0,0,0.3);
-	}
-	.button.#{$color}.border{
-	//place in loop
-		border: 1px solid darken($temp-color, 6%);
-	}
-
-	.button.#{$color}.plastic{
-		//place in loop
-		border: 1px solid darken($temp-color, 6%);
-		border-bottom: 4px solid darken($temp-color, 6%);
-		box-shadow: 0 -1px 0 rgba(255,255,255,0.05) inset;
-	    -moz-box-shadow: 0 -1px 0 rgba(255,255,255,0.05) inset;
-	    -webkit-box-shadow: 0 -1px 0 rgba(255,255,255,0.05) inset;
-	}
-}
-
-.button.wider-med{
-	padding-right: 2.5rem;
-	padding-left: 2.5rem;
-}
-
-.button.shadow{
-	box-shadow: 1px 1px 1px rgba(0,0,0,0.4);
-}
-.button.text-shadow{
-	text-shadow: 1px 1px 0px rgba(0,0,0,0.3);
-}
-
-.button.inner-text-shadow{
-	text-shadow: 1px 1px 0px rgba(255,255,255,0.3);
-}
-
-.button.expand{
-	margin-right:0;
-}
+//OTHER
 .fw-light{
 	font-weight: 200;
 }
