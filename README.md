@@ -45,6 +45,7 @@ rails generate style:set colorscheme:Flatland
 Todo
 ----
 
+* Seperate into files
 * PHILOSOPLY
 	* access any style by chaining
 		* a.button.primary.transparent.extra-padding.fw-medium.uppercase Custom Button
@@ -69,10 +70,9 @@ Todo
 	* gradient
 	* blur
 * BUTTONS
-	* shadow / text-shadow
-	* border
-	* outline
-	* 3d effect - intense vs subtle
+	* More 3d button
+	* text-shadow
+	* outline - later
 	* BUTTON GROUPS, ICONS, ANIMATION
 	* Primary override
 * FORMS / ERRORS

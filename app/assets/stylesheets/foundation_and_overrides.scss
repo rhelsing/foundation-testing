@@ -145,7 +145,7 @@ $font-smoothing: antialiased;
 // $last-child-float: $opposite-direction;
 
 // We use these to make sure border radius matches unless we want it different.
-// $global-radius: 3px;
+ $global-radius: 5px;
 // $global-rounded: 1000px;
 
 // We use these to control inset shadow shiny edges and depressions.
@@ -1602,11 +1602,35 @@ $button-font-align: center;
 		background: linear-gradient(adjust-hue(lighten($base_color, 5),-1%), $base_color); /* Standard syntax */
 	    box-shadow: 0px 0px 1px rgba(0,0,0,0.3);
 	}
+	.button.#{$color}.border{
+	//place in loop
+		border: 1px solid darken($temp-color, 6%);
+	}
+
+	.button.#{$color}.plastic{
+		//place in loop
+		border: 1px solid darken($temp-color, 6%);
+		border-bottom: 4px solid darken($temp-color, 6%);
+		box-shadow: 0 -1px 0 rgba(255,255,255,0.05) inset;
+	    -moz-box-shadow: 0 -1px 0 rgba(255,255,255,0.05) inset;
+	    -webkit-box-shadow: 0 -1px 0 rgba(255,255,255,0.05) inset;
+	}
 }
 
 .button.wider-med{
 	padding-right: 2.5rem;
 	padding-left: 2.5rem;
+}
+
+.button.shadow{
+	box-shadow: 0px 0px 3px rgba(0,0,0,0.7);
+}
+.button.text-shadow{
+
+}
+
+.button.inner-text-shadow{
+
 }
 
 .button.expand{
