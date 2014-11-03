@@ -79,10 +79,9 @@ Todo
 	* changes on subtle colors
 	* Animation
 * FORMS / ERRORS
-	* Generate simple page for testing w/ simple form?
-	* Determine modifiers and create css
-	* Label Strength and Uppercase
+	* Label Strength and Uppercase in typography?
 	* Put pro into it's own class like flat for now
+	* Padding on errors
 * TYPOGRAPHY
 * COLORS
 	* typography colors

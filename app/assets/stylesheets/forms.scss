@@ -9,6 +9,7 @@ div.required{
 		display: none;
 	}
 }
+//REMOVE FOUNDATION GLOW
 input[type="text"],
 input[type="password"],
 input[type="date"],
@@ -24,7 +25,6 @@ input[type="time"],
 input[type="url"],
 input[type="color"],
 textarea {
-	border: 1px solid #e1e1e1;
 	box-shadow: none;
 	transition: border-color 0.15s ease-in-out;
 }
@@ -43,62 +43,105 @@ input[type="time"]:focus,
 input[type="url"]:focus,
 input[type="color"]:focus,
 textarea:focus {
-    box-shadow: none;
-    border-color: $primary-color;
-    outline: none;
-    background: #fff;
+	box-shadow: none;
+	outline: none;
 }
-div.error{
-	input{
-		border-color: $alert-color;
-	}
-	input:focus{
-		border-color: $alert-color;
-	}
-}
+//NOT ITALICS
 [data-abide] .error small.error{
 	font-style: normal;
 }
-input.tight{
-	padding: 0.3rem;
-	height: 1.7rem;
-	line-height: 1rem;
+
+//CUSTOM STYLING: HACK: Lots of repeated code. Use Mixins.
+
+//PRO
+form.pro{
+	input[type="text"],
+	input[type="password"],
+	input[type="date"],
+	input[type="datetime"],
+	input[type="datetime-local"],
+	input[type="month"],
+	input[type="week"],
+	input[type="email"],
+	input[type="number"],
+	input[type="search"],
+	input[type="tel"],
+	input[type="time"],
+	input[type="url"],
+	input[type="color"],
+	textarea {
+		border: 1px solid #e1e1e1;
+		padding: 0.3rem;
+		height: 1.7rem;
+		line-height: 1rem;
+	}
+	input[type="text"]:focus,
+	input[type="password"]:focus,
+	input[type="date"]:focus,
+	input[type="datetime"]:focus,
+	input[type="datetime-local"]:focus,
+	input[type="month"]:focus,
+	input[type="week"]:focus,
+	input[type="email"]:focus,
+	input[type="number"]:focus,
+	input[type="search"]:focus,
+	input[type="tel"]:focus,
+	input[type="time"]:focus,
+	input[type="url"]:focus,
+	input[type="color"]:focus,
+	textarea:focus {
+		border-color: $primary-color;
+		background: #fff;
+	}
+	div.error{
+		input{
+			border-color: $alert-color;
+		}
+		input:focus{
+			border-color: $alert-color;
+		}
+	}
+	small.error{
+		font-weight: 200;
+	}
 }
+
+//FLAT
 form.flat{
 	input[type="text"],
-input[type="password"],
-input[type="date"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="month"],
-input[type="week"],
-input[type="email"],
-input[type="number"],
-input[type="search"],
-input[type="tel"],
-input[type="time"],
-input[type="url"],
-input[type="color"],
-textarea {
+	input[type="password"],
+	input[type="date"],
+	input[type="datetime"],
+	input[type="datetime-local"],
+	input[type="month"],
+	input[type="week"],
+	input[type="email"],
+	input[type="number"],
+	input[type="search"],
+	input[type="tel"],
+	input[type="time"],
+	input[type="url"],
+	input[type="color"],
+	textarea {
 		background: #e8ebed;
 		border: 2px solid #e8ebed;
 		margin-bottom: 15px;
 	}
 	input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="date"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="month"]:focus,
-input[type="week"]:focus,
-input[type="email"]:focus,
-input[type="number"]:focus,
-input[type="search"]:focus,
-input[type="tel"]:focus,
-input[type="time"]:focus,
-input[type="url"]:focus,
-input[type="color"]:focus,
-textarea:focus {
+	input[type="password"]:focus,
+	input[type="date"]:focus,
+	input[type="datetime"]:focus,
+	input[type="datetime-local"]:focus,
+	input[type="month"]:focus,
+	input[type="week"]:focus,
+	input[type="email"]:focus,
+	input[type="number"]:focus,
+	input[type="search"]:focus,
+	input[type="tel"]:focus,
+	input[type="time"]:focus,
+	input[type="url"]:focus,
+	input[type="color"]:focus,
+	textarea:focus {
 		background: #fff;
 		border: 2px solid #d4d9dd;
 	}
@@ -124,20 +167,153 @@ textarea:focus {
 	small.error:before{
 		position: relative;
 		display: inline-block;
-		border-left: 10px solid transparent;
-		border-right: 10px solid transparent;
-		border-bottom: 10px solid $alert-color;
-		left: 10px;
+		border-left: 7px solid transparent;
+		border-right: 7px solid transparent;
+		border-bottom: 7px solid $alert-color;
+		left: 2px;
 		top: -19px;
-		margin-right:-18px;
+		margin-right:-14px;
 		content: '';
 	}
 }
 
-input.plastic{
+
+//GRADIENT
+form.gradient{
+	input[type="text"],
+	input[type="password"],
+	input[type="date"],
+	input[type="datetime"],
+	input[type="datetime-local"],
+	input[type="month"],
+	input[type="week"],
+	input[type="email"],
+	input[type="number"],
+	input[type="search"],
+	input[type="tel"],
+	input[type="time"],
+	input[type="url"],
+	input[type="color"],
+	textarea {
+		background: #fff;
+		border: 1px solid #d7d9df;
+		margin-bottom: 1px;
+	}
+	input[type="text"]:focus,
+	input[type="password"]:focus,
+	input[type="date"]:focus,
+	input[type="datetime"]:focus,
+	input[type="datetime-local"]:focus,
+	input[type="month"]:focus,
+	input[type="week"]:focus,
+	input[type="email"]:focus,
+	input[type="number"]:focus,
+	input[type="search"]:focus,
+	input[type="tel"]:focus,
+	input[type="time"]:focus,
+	input[type="url"]:focus,
+	input[type="color"]:focus,
+	textarea:focus {
+		background: #fff;
+		border: 1px solid $primary-color;
+	}
+	div.error{
+		input{
+			background: white;
+			border: 1px solid $alert-color;
+		}
+		input:focus{
+			background: white;
+			border: 1px solid $alert-color;
+		}
+	}
+	.error small.error{
+		background: white;
+		border-color: white;
+		color: $alert-color;
+		font-weight: 200;
+		margin: 0;
+	}
+	input.button{
+		margin-top:10px;
+	}
 
 }
 
-input.gradient{
+//PLASTIC
+form.plastic{
+	input[type="text"],
+	input[type="password"],
+	input[type="date"],
+	input[type="datetime"],
+	input[type="datetime-local"],
+	input[type="month"],
+	input[type="week"],
+	input[type="email"],
+	input[type="number"],
+	input[type="search"],
+	input[type="tel"],
+	input[type="time"],
+	input[type="url"],
+	input[type="color"],
+	textarea {
+		background: #ebf0f2;
+		border: 2px solid #ebf0f2;
+		border-top: 2px solid #dbe3e7;
+		margin-bottom: 10px;
+	}
+	input[type="text"]:focus,
+	input[type="password"]:focus,
+	input[type="date"]:focus,
+	input[type="datetime"]:focus,
+	input[type="datetime-local"]:focus,
+	input[type="month"]:focus,
+	input[type="week"]:focus,
+	input[type="email"]:focus,
+	input[type="number"]:focus,
+	input[type="search"]:focus,
+	input[type="tel"]:focus,
+	input[type="time"]:focus,
+	input[type="url"]:focus,
+	input[type="color"]:focus,
+	textarea:focus {
+		background: #fff;
+		border: 2px solid $primary-color;
+	}
+	div.error{
+		input{
+			background: lighten($alert-color, 40%);
+			border: 2px solid lighten($alert-color, 40%);
+			border-top: 2px solid $alert-color;
+		}
+		input:focus{
+			background: white;
+			border-color: 2px solid $alert-color;
+		}
+	}
+	small.error{
+		padding: 3px 0px 3px -30px;
+		margin-bottom: 1rem;
+		font-size: 0.75rem;
+		font-weight: normal;
+		border-radius: $global-radius;
+		font-weight: 200;
 
+		border: 1px solid $alert-color, 6%;
+		border-bottom: 4px solid darken($alert-color, 6%);
+		box-shadow: 0 -1px 0 rgba(255,255,255,0.05) inset;
+	    -moz-box-shadow: 0 -1px 0 rgba(255,255,255,0.05) inset;
+	    -webkit-box-shadow: 0 -1px 0 rgba(255,255,255,0.05) inset;
+	}
+	small.error:before{
+		position: relative;
+		display: inline-block;
+		border-left: 7px solid transparent;
+		border-right: 7px solid transparent;
+		border-bottom: 7px solid $alert-color;
+		left: 2px;
+		top: -19px;
+		margin-right:-14px;
+		content: '';
+	}
 }

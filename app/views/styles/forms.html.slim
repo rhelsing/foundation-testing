@@ -1,17 +1,17 @@
 .row
 
-	h2 Pro Form
-	= simple_form_for :user, :url => '/forms', :html => {'data-abide' => ''} do |f|
-	  = f.input :name, placeholder: 'Name', input_html: { required: '', class: 'tight' }, hint: 'Cannot be blank.'
-	  = f.input :email, placeholder: 'user@domain.com', input_html: { required: '', class: 'tight' }, hint: 'Must be a valid email address.'
+	h2 Pro
+	= simple_form_for :user, :url => '/forms', :html => {'data-abide' => '', :class => 'pro'} do |f|
+	  = f.input :name, placeholder: 'Name', input_html: { required: ''}, hint: 'Cannot be blank.'
+	  = f.input :email, placeholder: 'user@domain.com', input_html: { required: ''}, hint: 'Must be a valid email address.'
 	  .row
 	  	.columns.small-6
-	  		= f.input :content, placeholder: 'Short description', input_html: { required: '', class: 'tight' }, hint: 'Cannot be blank.'
+	  		= f.input :content, placeholder: 'Short description', input_html: { required: ''}, hint: 'Cannot be blank.'
 	  	.columns.small-6
-	  		= f.input :dob, placeholder: '01-31-1984', input_html: { required: '', class: 'tight' }, hint: 'Cannot be blank.'
-	  = f.button :submit, class: 'gradient primary radius small'
+	  		= f.input :dob, placeholder: '01-31-1984', input_html: { required: ''}, hint: 'Cannot be blank.'
+	  = f.button :submit, class: 'gradient info radius small'
 
-	h2 Flat Form
+	h2 Flat
 	= simple_form_for :user, :url => '/forms', :html => {'data-abide' => '', :class => 'flat'} do |f|
 	  = f.input :name, placeholder: 'Name', input_html: { required: '', class: 'radius' }, hint: 'Cannot be blank.'
 	  = f.input :email, placeholder: 'user@domain.com', input_html: { required: '', class: 'radius' }, hint: 'Must be a valid email address.'
@@ -21,3 +21,25 @@
 	  	.columns.small-6
 	  		= f.input :dob, placeholder: '01-31-1984', input_html: { required: '', class: 'radius' }, hint: 'Cannot be blank.'
 	  = f.button :submit, class: 'success'
+
+	h2 Gradient
+	= simple_form_for :user, :url => '/forms', :html => {'data-abide' => '', :class => 'gradient'} do |f|
+	  = f.input :name, placeholder: 'Name', input_html: { required: '', class: 'radius' }, hint: 'Cannot be blank.'
+	  = f.input :email, placeholder: 'user@domain.com', input_html: { required: '', class: 'radius' }, hint: 'Must be a valid email address.'
+	  .row
+	  	.columns.small-6
+	  		= f.input :content, placeholder: 'Short description', input_html: { required: '', class: 'radius' }, hint: 'Cannot be blank.'
+	  	.columns.small-6
+	  		= f.input :dob, placeholder: '01-31-1984', input_html: { required: '', class: 'radius' }, hint: 'Cannot be blank.'
+	  = f.button :submit, class: 'primary round transparent'
+
+	h2 Plastic
+	= simple_form_for :user, :url => '/forms', :html => {'data-abide' => '', :class => 'plastic'} do |f|
+	  = f.input :name, placeholder: 'Name', input_html: { required: '', class: 'radius' }, hint: 'Cannot be blank.'
+	  = f.input :email, placeholder: 'user@domain.com', input_html: { required: '', class: 'radius' }, hint: 'Must be a valid email address.'
+	  .row
+	  	.columns.small-6
+	  		= f.input :content, placeholder: 'Short description', input_html: { required: '', class: 'radius' }, hint: 'Cannot be blank.'
+	  	.columns.small-6
+	  		= f.input :dob, placeholder: '01-31-1984', input_html: { required: '', class: 'radius' }, hint: 'Cannot be blank.'
+	  = f.button :submit, class: 'warning radius plastic'
