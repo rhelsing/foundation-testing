@@ -41,6 +41,16 @@ rails generate style:set typeface_secondary:ComicSans
 rails generate style:set colorscheme:Flatland
 ```
 
+CURRENTLY WORKING ON
+___
+
+* Color Scheme Global
+	* Text colors
+	* Accents: Derivatives of primary. Can Override.
+* Pro: Google Style
+* Typography
+* Global Permutation Management
+
 
 Todo
 ----
@@ -58,16 +68,17 @@ Todo
 	* quotations
 	* selector styles
 	* simple animations
+	* hero unit
 	* refills++
 * FIXES
-	* no pointer on label
-	* toggle labels on either side?
-	* COLOR
-		* color corrections based on lightness
+	* toggle label placement
+	* color corrections based on lightness
 	* Transparent has problem on group
 	* Split buttons check
-	* no border on group
-	* pro text place down
+	* no left border on button group
+	* pro text / error padding
+	* Padding on errors
+	* hook up arbitrary colors (in forms): grays and texts to color scheme
 * MODIFIERS
 	* modifiers:padding, border, space between buttons
 	* gradient
@@ -78,11 +89,8 @@ Todo
 	* outline/well
 	* changes on subtle colors
 	* Animation
-* FORMS / ERRORS
-	* Label Strength and Uppercase in typography?
-	* Put pro into it's own class like flat for now
-	* Padding on errors
 * TYPOGRAPHY
+	* Form Label Strength and Uppercase in typography?
 * COLORS
 	* typography colors
 	* form gray
