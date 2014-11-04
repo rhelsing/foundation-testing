@@ -50,17 +50,19 @@ ___
 * Pro: Google Style
 * Typography
 * Global Permutation Management
+* Remove special stylings from templates
 
 
 Todo
 ----
 
 * PHILOSOPLY
-	* access any style by chaining
-		* a.button.primary.transparent.extra-padding.fontweight-medium.uppercase Custom Button
-	* can create themes with behaviours built in
-		* FLAT THEME:
-		* a.button DEFAULT BUTTON
+	* establish theme in global vars
+	* default foundation markup
+	* can choose from predefined themes
+	* tweak base patterns
+	* patterns defined in mixins
+	* manage with rails commands
 * COMPONENTS
 	* icon bullets styles
 	* split on vertical nav
