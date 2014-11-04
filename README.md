@@ -45,8 +45,8 @@ CURRENTLY WORKING ON
 ___
 
 * Color Scheme Global
-	* Text colors
-	* Accents: Derivatives of primary. Can Override.
+	* Text/accent/bg colors generators
+	* Better color scheme generation when not rgb
 * Pro: Google Style
 * Typography
 * Global Permutation Management
@@ -93,9 +93,5 @@ Todo
 	* Animation
 * TYPOGRAPHY
 	* Form Label Strength and Uppercase in typography?
-* COLORS
-	* typography colors
-	* form gray
-	* all arbitrary colors defined in one place
 * TBD PROCESS:
 	* NAVIGATION / MOBILE SIDEBAR

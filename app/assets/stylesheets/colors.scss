@@ -1,19 +1,21 @@
 //COLOR SCHEME
+@import 'color_functions';
 
-$primary-color: #3498db;//:use 60% of time //header and buttons
-$secondary-color: #2c3e50;//:use 30% of time
-$tertiary-color: #bdc3c7;//:use 10% of time
+$primary-color: #2980b9;//:use 60% of time //calculate all from one color
+$complement-color: adjust_hue($primary-color, 180);
+$secondary-color: adjust_hue($primary-color, 135);//:use 30% of time
+$tertiary-color: adjust_hue($primary-color, 200);//:use 10% of time
 
 //Needed for foundation styles. Auto Generate from hues of primary
-$alert-color: #e74c3c;//red
-$success-color: #1abc9c;//green
-$warning-color: #f1c40f;//yellow/orange
-$info-color: #9b59b6;//blue
+$alert-color: alert($primary-color);//red
+$success-color: success($primary-color);//green
+$warning-color: warning($primary-color);//yellow/orange
+$info-color: info($primary-color);//blue
 
 //Buttons:
 //Put colors that need button generation here: usage: a.button.secondary
-$colors: 			primary 		secondary 			tertiary 		alert 			success 		warning 		info;
-$color-definition: 	$primary-color 	$secondary-color 	$tertiary-color $alert-color 	$success-color 	$warning-color 	$info-color;
+$colors: 			primary 		compliment 			secondary 			tertiary 		alert 			success 		warning 		info;
+$color-definition: 	$primary-color 	$complement-color	$secondary-color 	$tertiary-color $alert-color 	$success-color 	$warning-color 	$info-color;
 
 //Backgrounds:
 $bg-colors: white accent dark dark-accent;
