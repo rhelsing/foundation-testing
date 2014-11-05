@@ -1,87 +1,91 @@
-header.blue
+header.pic
+	div
+		.row
+			nav.top-bar.transparent data-topbar="" role="navigation"
+			  ul.title-area
+			    li.name
+			      h1
+			        a href="#"  keepmycoverage
+			    li.toggle-topbar.menu-icon
+			      a href="#"
+			        span
+			  div.top-bar-section
+			    /! Right Nav Section
+			    ul.right
+			      li.active
+			        a href="#"  Features
+			      li
+			        a href="#"  Pricing
+			      li
+			        a href="#"  Sign In
+			      li
+			      	a.button.secondary.radius href="#" Free Trial
 	.row
-		nav.top-bar data-topbar="" role="navigation"
-		  ul.title-area
-		    li.name
-		      h1
-		        a href="#"  treehouse
-		    li.toggle-topbar.menu-icon
-		      a href="#"
-		        span
-		  section.top-bar-section
-		    /! Right Nav Section
-		    ul.right
-		      li.active
-		        a href="#"  Features
-		      li
-		        a href="#"  Pricing
-		      li
-		        a href="#"  Sign In
-		      li
-		      	a.button.secondary href="#" Free Trial
-		.panel.no-margin
-			h1 Learn HTML, CSS, iPhone apps & more
-			h5 Learn how to build websites & apps, write code or start a business.
-			a.button.success Free trial
-			a.button.secondary How it Works
+		section
+			h1.inverse-text Learn HTML, CSS, iPhone apps & more
+			h5.inverse-secondary-text Learn how to build websites & apps, write code or start a business.
+			a.button.success.plastic.radius Free trial
+			a.button.secondary.plastic.radius How it Works
 section#features
 	.row
 		.columns.small-6
-			.panel.text-center.big-icon #{fa_icon "angellist"}
+			.text-center.big-icon #{fa_icon "angellist"}
 		.columns.small-6
-			h1 Learn at your pace
-			p Learn from over 1000 videos created by our expert teachers on web design, coding, business, and much more. Our library is continually refreshed with the latest on web technology so you'll never fall behind.
+			h1.primary-text Learn at your pace
+			p.secondary-text Learn from over 1000 videos created by our expert teachers on web design, coding, business, and much more. Our library is continually refreshed with the latest on web technology so you'll never fall behind.
 			a href="#" Check out our library
 	.row
 		.columns.small-6
-			h1 Practice makes perfect
-			p Practice what you've learned through quizzes and interactive Code Challenges. This style of practicing will allow you to retain information you've learned so you can apply it to your own future projects.
+			h1.primary-text Practice makes perfect
+			p.secondary-text Practice what you've learned through quizzes and interactive Code Challenges. This style of practicing will allow you to retain information you've learned so you can apply it to your own future projects.
 			a href="#" Compare pricing plans
 		.columns.small-6
-			.panel.text-center.big-icon #{fa_icon "bicycle"}
+			.text-center.big-icon #{fa_icon "bicycle"}
 	.row
 		.columns.small-6
-			.panel.text-center.big-icon #{fa_icon "cc-discover"}
+			.text-center.big-icon #{fa_icon "cc-discover"}
 		.columns.small-6
-			h1 Earn achievements, show off skills
-			p You'll earn badges as you journey through our extensive library of courses. These badges are an indicator of what skills you currently possess and are viewable by anyone online.
+			h1.primary-text Earn achievements, show off skills
+			p.secondary-text You'll earn badges as you journey through our extensive library of courses. These badges are an indicator of what skills you currently possess and are viewable by anyone online.
 			a href="#" Sign up to start earning
-div.blue
+section.dark-accent-bg
+	//white accent dark dark-accent;
 	.row
-		h2 On the web and mobile
-		p With a web site crafted to work on every major device and dedicated mobile apps for both the iPad and Android devices, we're there to help you learn.
-		a.button.secondary Treehouse for iPad
-		a.button.secondary Treehouse for Android
+		h2.inverse-text On the web and mobile
+		p.inverse-secondary-text With a web site crafted to work on every major device and dedicated mobile apps for both the iPad and Android devices, we're there to help you learn.
+		a.button.secondary.plastic.radius Treehouse for iPad
+		a.button.secondary.plastic.radius Treehouse for Android
 section#testimonials
 	.row
 		.columns.small-8.small-centered.text-center
-			h1 Trusted worldwide
-			h5 Over 86,000 students and companies, ranging from beginners to professionals, use Treehouse to develop and improve their skills.
-			.columns.small-10.small-centered.text-center
-				.columns.small-3.text-center.med-icon #{fa_icon "cc-discover"}
-				.columns.small-3.text-center.med-icon #{fa_icon "cc-discover"}
-				.columns.small-3.text-center.med-icon #{fa_icon "cc-discover"}
-				.columns.small-3.text-center.med-icon #{fa_icon "cc-discover"}
+			h1.primary-text Trusted worldwide
+			h5.secondary-text Over 86,000 students and companies, ranging from beginners to professionals, use Treehouse to develop and improve their skills.
+			ul.small-block-grid-4
+				li.med-icon #{fa_icon "cc-discover"}
+				li.med-icon #{fa_icon "cc-amex"}
+				li.med-icon #{fa_icon "cc-mastercard"}
+				li.med-icon #{fa_icon "cc-visa"}
 	.row
 		.columns.small-4
 			blockquote
-	  		p I do not fear computers. I fear the lack of them.
-	    	cite Isaac Asimov
+	  		p.secondary-text I do not fear computers. I fear the lack of them.
+	    	cite.secondary-text Isaac Asimov
 		.columns.small-4
 			blockquote
-	  		p I do not fear computers. I fear the lack of them.
-	    	cite Isaac Asimov
+	  		p.secondary-text I do not fear computers. I fear the lack of them.
+	    	cite.secondary-text Isaac Asimov
 		.columns.small-4
 			blockquote
-	  		p I do not fear computers. I fear the lack of them.
-	    	cite Isaac Asimov
-section#call-to-action.blue
+	  		p.secondary-text I do not fear computers. I fear the lack of them.
+	    	cite.secondary-text Isaac Asimov
+section#call-to-action.pic
 	.row
 		.columns.small-8.small-centered.text-center
-			h3.subheader Live your dreams
-			h1 Love your job
-			h5 Treehouse teaches the in-demand technology skills you need to land your dream job or build a startup.
-			a.button.success Start a free trial
-footer ©2014 Treehouse Island, Inc. Terms, Privacy, Contact
+			h3.inverse-secondary-text Live your dreams
+			h1.inverse-text Love your job
+			h5.inverse-secondary-text  Treehouse teaches the in-demand technology skills you need to land your dream job or build a startup.
+			a.button.success.plastic.radius Start a free trial
+footer
+	.row.secondary-text ©2014 Treehouse Island, Inc. Terms, Privacy, Contact
 
 

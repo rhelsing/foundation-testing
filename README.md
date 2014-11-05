@@ -46,7 +46,6 @@ ___
 
 * Color Scheme Global
 	* Text/accent/bg colors generators
-	* Better color scheme generation when not rgb
 * Pro: Google Style
 * Typography
 * Global Permutation Management
@@ -81,6 +80,7 @@ Todo
 	* pro text / error padding
 	* Padding on errors
 	* hook up arbitrary colors (in forms): grays and texts to color scheme
+	* Better color scheme generation when not rgb
 * MODIFIERS
 	* modifiers:padding, border, space between buttons
 	* gradient

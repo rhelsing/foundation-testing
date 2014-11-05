@@ -1,7 +1,7 @@
 //COLOR SCHEME
 @import 'color_functions';
 
-$primary-color: #2980b9;//:use 60% of time //calculate all from one color
+$primary-color: #3389dd;//:use 60% of time //calculate all from one color
 $complement-color: adjust_hue($primary-color, 180);
 $secondary-color: adjust_hue($primary-color, 135);//:use 30% of time
 $tertiary-color: adjust_hue($primary-color, 200);//:use 10% of time
@@ -18,19 +18,75 @@ $colors: 			primary 		compliment 			secondary 			tertiary 		alert 			success 		w
 $color-definition: 	$primary-color 	$complement-color	$secondary-color 	$tertiary-color $alert-color 	$success-color 	$warning-color 	$info-color;
 
 //Backgrounds:
-$bg-colors: white accent dark dark-accent;
-$bg-colors-d: #fff #f5f5f5 #2d3338 #41464b;
+$bg-colors: white accent dark dark-accent complement;
+$bg-colors-d: #fff #f5f5f5 #2d3338 #41464b $complement-color;
 
 //Borders?
 $border-colors: accent dark-accent;
-$border-colors-d: #f5f5f5 #41464b;
+$border-colors-d: #f5f5f5 #41464b; //transparency instead of absolute
 
 //Text Colors:
-$text-colors: text-primary text-secondary text-inverse text-inverse-secondary;
-$text-colors-d:#404a50  #999999 #fff #859196;
-
-//generate additional shades of text, primary based on percentage lightness/darkness?
+$text-colors: primary secondary inverse inverse-secondary;//transparency instead of absolute so can be on colored background
+$text-colors-d:#404a50  rgba(0,0,0,0.7) #fff rgba(255,255,255,0.7);
 
 //Set percentage by which we go darker for plastic shadow, etc
 
-//affect nav bar and secondary nav?
+//nav on small screens
+//secondary nav
+//subheader color
+//main text color
+//override h1, subheader, p
+
+//generators
+//BACKGROUNDS
+@each $color-id in $bg-colors {
+	$i: index($bg-colors, $color-id);
+	$color: nth($bg-colors-d, $i);
+
+	.#{$color-id}-bg{
+		background-color: $color;
+	}
+}
+
+//TEXT
+@each $color-id in $text-colors {
+	$i: index($text-colors, $color-id);
+	$color: nth($text-colors-d, $i);
+
+	.#{$color-id}-text{
+		color: $color;
+	}
+}
+
+//BORDERS
+@each $color-id in $border-colors {
+	$i: index($border-colors, $color-id);
+	$color: nth($border-colors-d, $i);
+
+	.#{$color-id}-border{
+		border:$border-size solid $color;
+	}
+}
+
+//TEMP
+nav.top-bar{
+	background: $primary-color;
+}
+nav.top-bar.transparent{
+	background: transparent;
+	li{
+		background: transparent;
+		a:not(.button){
+			background: transparent;
+		}
+		a:not(.button):hover{
+			background: rgba(255,255,255,0.3);
+		}
+	}
+}
+nav.top-bar.transparent li.active a:not(.button){
+	background: rgba(255,255,255,0.2);
+}
+nav.top-bar.transparent li.active a:not(.button):hover{
+	background: rgba(255,255,255,0.3);
+}

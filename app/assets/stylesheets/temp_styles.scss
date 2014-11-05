@@ -1,25 +1,3 @@
-//SAMPLE COLORS
-.blue{
-	background: $primary-color;
-}
-.one{
-	background-color: $primary-color;
-}
-.two{
-	background-color: $secondary-color;
-}
-.three{
-	background-color: $alert-color;
-}
-.four{
-	background-color: darken($secondary-color, 30);
-	dd a, dt{
-		color: lighten($secondary-color, 30);
-	}
-}
-.five{
-	background-color: $warning-color;
-}
 .big-icon{
 	font-size: 12em;
 	color: $primary-color;
@@ -29,16 +7,10 @@
 	color: $primary-color;
 }
 
-.dark{
-	background: $primary-color;
-
-	padding-top:100px;
-}
 .pic{
 	background: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png"), linear-gradient(10deg, #0A120D, #162C4C), no-repeat #162C4C scroll;
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
 
-	padding-top:100px;
 }
