@@ -1,4 +1,4 @@
-class InitializerGenerator < Rails::Generators::Base
+class InitializerGenerator < Rails::Generators::Base #can do NamedBase for passing #{file_name}
 	desc "This generator creates an initializer file at config/initializers"
   def create_initializer_file
     create_file "config/initializers/initializer.rb", "# Add initialization content here\n"
@@ -8,4 +8,3 @@ class InitializerGenerator < Rails::Generators::Base
 		end
 		gsub_file 'config/initializers/initializer.rb', 'Hello World', 'Hola Mundo'
   end
-end
