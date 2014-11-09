@@ -43,3 +43,4 @@ gem 'foundation-rails' #rails g foundation:install
 gem 'simple_form' #rails generate simple_form:install --foundation
 gem 'slim-rails'
 gem "font-awesome-rails"
+gem "staple"
